@@ -16,6 +16,12 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: '关于'
+    });
+});
+
 app.listen(8006, () => {
     console.log('site start at port ', 8006);
 })
