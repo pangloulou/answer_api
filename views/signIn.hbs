@@ -1,0 +1,10 @@
+<h1>登录</h1>
+<form action="/user/sign_in" method="POST">
+    <input type="text" name="name" placeholder="用户名" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <hr />
+    <input type="radio" value="1" checked name="role">学生 <br>
+    <input type="radio" value="2" name="role">老师 <br>
+    <input type="submit" />
+</form>
+<a href="/user/sign_up">注册</a>
